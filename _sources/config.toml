@@ -1,0 +1,10 @@
+[site]
+title = "My fizzy blog"
+author = "TheElectronWill"
+languages = ["en", "fr"]
+date_format = "%Y-%m-%d"
+
+[engine]
+input = "."
+output = ".."
+extensions = ["markdown.extensions.codehilite","markdown.extensions.extra","mdx_math"]

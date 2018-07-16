@@ -1,0 +1,8 @@
+
+	<li class="post_in_list">
+		<a class="post_link" href="${post.name}.html">${post.title}</a>
+		<time datetime="${post.datetime.strftime("%Y-%m-%d")}">
+		<ul class="post_tags">§{post.tags:tag:
+			<li class="tag">${tag}</li>}
+		</ul>
+	</li>

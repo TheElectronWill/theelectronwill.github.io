@@ -1,0 +1,107 @@
+canvas {
+  background: #18b69a;
+  display: block;
+  position: fixed;
+  z-index: -1;
+}
+
+.main {
+  position: absolute;
+  left: 50%;
+}
+
+.card {
+  background-color: #ffffff;
+  margin-bottom: 25px;
+  padding: 20px;
+  text-align: center;
+}
+
+a .card {
+  opacity: 0.8;
+}
+
+a:hover .card {
+  opacity: 1;
+}
+
+@media screen and (min-width: 831px) {
+  .main {
+    width: 800px;
+    margin-left: -400px;
+    margin-top: 100px;
+  }
+
+  .half0 {
+    margin-right: 35px;
+  }
+  .card-half {
+    width: 340px;
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .main {
+    left: 20px;
+    margin-right: 20px;
+    margin-top: 25px;
+  }
+
+  .half0 {
+    margin-right: 0px;
+  }
+}
+
+ul li {
+  text-align: left;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14pt;
+}
+
+h1 {
+  font-family: "Raleway", Helvetica, sans-serif;
+  font-size: 25pt;
+  font-weight: 900;
+  margin: 0;
+}
+
+h2 {
+  font-family: "Raleway", Helvetica, sans-serif;
+  font-size: 15pt;
+  font-style: italic;
+  margin: 5px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+p a {
+  color: royalblue;
+}
+
+p a:hover {
+  color: #18b69a;
+}
+
+.icon {
+  margin-right: 0.2em;
+}
+
+img.icon {
+  width: 1em;
+  display: inline-block;
+  margin-bottom: -4px;
+}
+
+.circleimg {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
