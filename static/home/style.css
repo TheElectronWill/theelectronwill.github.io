@@ -25,7 +25,7 @@ a:hover .card {
   opacity: 1;
 }
 
-@media screen and (min-width: 831px) {
+@media screen and (min-width: 831px) and (min-device-width: 831px) {
   .main {
     width: 800px;
     margin-left: -400px;
@@ -41,7 +41,7 @@ a:hover .card {
   }
 }
 
-@media screen and (max-width: 830px) {
+@media screen and (max-width: 830px), screen and (max-device-width: 830px) {
   .main {
     left: 20px;
     margin-right: 20px;
