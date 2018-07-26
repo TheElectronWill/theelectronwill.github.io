@@ -1,4 +1,22 @@
+<div class="post-header">
+  <h1>${post.title}</h1>
+  <a class="year" href="${root}/${lang}/years/${post.datetime.year}.html">
+    <i class="fas fa-calendar-alt"></i>
+    <time>
+      ${post.datetime.strftime(settings.date_format)}
+    </time>
+  </a>
+  <ul class="tags">
+    §{post.tags:tag:
+      <li class="tag">
+        <a href="${root}/${lang}/tags/${tag}.html">
+          <i class="fas fa-tags"></i>
+          ${tag}
+        </a>
+      </li>
+    }
+  </ul>
+</div>
 <article class="post">
-<h1>${post.title}</h1>
-${post.content}
+  ${post.content}
 </article>

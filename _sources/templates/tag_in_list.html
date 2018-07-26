@@ -1,5 +1,9 @@
-
-	<li class="tag_in_list">
-		${link(tag + ".html", tag, "tag_link")}
-		<span class="post_count">${post_count}</span>
-	</li>
+<li class="index-entry">
+  <a class="name" href="${tag}.html">
+    <i class="fas fa-tags"></i>
+    ${tag}
+  </a>
+  <a class="post-count" href="${tag}.html">
+    ● ${post_count} posts
+  </a>
+</li>

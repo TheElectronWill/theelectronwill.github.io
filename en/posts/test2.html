@@ -1,15 +1,81 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8"/>
-	<meta name="Language" content="en"/>
-	<title>My fizzy blog - Test 2</title>
-	<link rel="stylesheet" href="../../static/style.css"/>
+<meta charset="utf-8" />
+<meta name="Language" content="en" />
+<meta id="viewport" name="viewport" content="width=device-width" />
+<title>TheElectronWill's blog - Test 2</title>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet"> 
+<link rel="stylesheet" href="../../static/blog/style.css" />
+
 </head>
 <body>
+  <nav>
+  <ul class="nav-list">
+    <li class="nav-item">
+      <img class="logo" src="../../static/home/pic.png" alt="photo">
+      <span>TheElectronWill's blog</span>
+    </li>
+    <li class="nav-item">
+      <a href="../../en/posts/index.html">
+        <i class="fas fa-home"></i>
+        <span>Home</span>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a href="../../en/tags/index.html">
+        <i class="fas fa-tags"></i>
+        <span>Tags</span>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a href="../../en/years/index.html">
+        <i class="fas fa-calendar-alt"></i>
+        <span>Years</span>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a href="../../index.html">
+        <i class="fas fa-info-circle"></i>
+        <span>About me</span>
+      </a>
+    </li>
+    <li class="nav-item">
+      <div class="unavailable"><img class="icon" src="../../static/home/fr-round.png" alt="french flag"></img><span>En français</span></div>
+    </li>
+  </ul>
+</nav>
+
+  <main>
+    <div class="post-header">
+  <h1>Test 2</h1>
+  <a class="year" href="../../en/years/2018.html">
+    <i class="fas fa-calendar-alt"></i>
+    <time>
+      2018-07-20
+    </time>
+  </a>
+  <ul class="tags">
+    
+      <li class="tag">
+        <a href="../../en/tags/biggertag.html">
+          <i class="fas fa-tags"></i>
+          biggertag
+        </a>
+      </li>
+    
+      <li class="tag">
+        <a href="../../en/tags/test.html">
+          <i class="fas fa-tags"></i>
+          test
+        </a>
+      </li>
+    
+  </ul>
+</div>
 <article class="post">
-<h1>Test 2</h1>
-<h1>Title</h1>
+  <h1>Title</h1>
 <p>Some text</p>
 <h2>Title 2</h2>
 <p>Here is some code:</p>
@@ -18,9 +84,14 @@
   <span class="n">println</span><span class="o">(</span><span class="n">b</span><span class="o">)</span>
   <span class="n">println</span><span class="o">(</span><span class="n">c</span><span class="o">)</span>
 <span class="o">}</span>
+
+<span class="k">def</span> <span class="n">thisFunctionDefinitionIsWayTooLong</span><span class="o">[</span><span class="kt">A</span>, <span class="kt">B</span> <span class="k">&lt;:</span> <span class="kt">Any</span>, <span class="kt">C</span> <span class="k">&gt;:</span> <span class="kt">Null</span> <span class="k">&lt;:</span> <span class="kt">AnyRef</span>, <span class="kt">D</span> <span class="k">&lt;:</span> <span class="kt">C</span><span class="o">](</span><span class="n">a</span><span class="k">:</span> <span class="kt">A</span><span class="o">,</span> <span class="n">b</span><span class="k">:</span> <span class="kt">B</span><span class="o">,</span> <span class="n">c</span><span class="k">:</span> <span class="kt">C</span><span class="o">,</span> <span class="n">d</span><span class="k">:</span> <span class="kt">D</span> <span class="o">=</span> <span class="nc">Magic</span><span class="o">.</span><span class="n">getDefaultValueFor</span><span class="o">[</span><span class="kt">D</span>, <span class="kt">Any</span><span class="o">](</span><span class="n">d</span><span class="o">,</span> <span class="s">&quot;20&quot;</span> <span class="o">::</span> <span class="s">&quot;20&quot;</span><span class="o">))</span><span class="k">:</span> <span class="kt">Magic</span><span class="o">[</span><span class="kt">mutable.Buffer</span><span class="o">[</span><span class="kt">D</span><span class="o">]</span>, <span class="kt">A</span>, <span class="kt">B</span>, <span class="kt">C</span>, <span class="kt">List</span><span class="o">[</span><span class="kt">String</span><span class="o">]]</span> <span class="k">=</span> <span class="o">{</span>
+  <span class="k">return</span> <span class="kc">null</span><span class="o">;</span> <span class="c1">// Do *not* ever do this in prod!</span>
+<span class="o">}</span>
 </pre></div>
 
 
+<p>Some very long line here. Some very long string here. Some very long string here. Some very long string here. Some very long string here. Some very long string here. Some very long string here. Some very long string here. Some very long string here. Some very long string here. Some very long string here. Some very long string here.  </p>
 <h3>Subtitle</h3>
 <p>Java:</p>
 <div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="nn">java.lang.Object</span><span class="o">;</span>
@@ -43,5 +114,7 @@
 </ul>
 <p>Enjoy :)</p>
 </article>
+
+  </main>
 </body>
 </html>

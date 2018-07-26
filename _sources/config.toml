@@ -1,5 +1,5 @@
 [site]
-title = "My fizzy blog"
+title = "TheElectronWill's blog"
 author = "TheElectronWill"
 languages = ["en", "fr"]
 date_format = "%Y-%m-%d"
@@ -7,4 +7,18 @@ date_format = "%Y-%m-%d"
 [engine]
 input = "."
 output = ".."
-extensions = ["markdown.extensions.codehilite","markdown.extensions.extra","mdx_math"]
+extensions = ["markdown.extensions.codehilite", "markdown.extensions.extra", "mdx_math"]
+
+[i18n.en]
+home = "Home"
+tags = "Tags"
+years = "Years"
+github = "My Github"
+about = "About me"
+
+[i18n.fr]
+home = "Accueil"
+tags = "Tags"
+years = "Années"
+github = "Mon Github"
+about = "À propos de moi"

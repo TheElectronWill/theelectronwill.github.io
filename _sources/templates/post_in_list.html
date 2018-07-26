@@ -1,8 +1,19 @@
-
-	<li class="post_in_list">
-		<a class="post_link" href="${post.name}.html">${post.title}</a>
-		<time datetime="${post.datetime.strftime("%Y-%m-%d")}">
-		<ul class="post_tags">§{post.tags:tag:
-			<li class="tag">${tag}</li>}
-		</ul>
-	</li>
+<li class="post-in-list">
+  <a class="name" href="${root}/${lang}/posts/${post.name}.html">${post.title}</a>
+  <a class="year" href="${root}/${lang}/years/${post.datetime.year}.html">
+    <i class="fas fa-calendar-alt"></i>
+    <time>
+      ${post.datetime.strftime(settings.date_format)}
+    </time>
+  </a>
+  <ul class="tags">
+    §{post.tags:tag:
+      <li class="tag">
+        <a href="${root}/${lang}/tags/${tag}.html">
+          <i class="fas fa-tags"></i>
+          ${tag}
+        </a>
+      </li>
+    }
+  </ul>
+</li>

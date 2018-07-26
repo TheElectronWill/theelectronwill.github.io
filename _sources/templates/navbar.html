@@ -1,0 +1,50 @@
+<nav>
+  <ul class="nav-list">
+    <li class="nav-item">
+      <img class="logo" src="${static}/home/pic.png" alt="photo">
+      <span>${settings.site_title}</span>
+    </li>
+    <li class="nav-item">
+      <a href="${root}/${lang}/posts/index.html">
+        <i class="fas fa-home"></i>
+        <span>${i18n("home")}</span>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a href="${root}/${lang}/tags/index.html">
+        <i class="fas fa-tags"></i>
+        <span>${i18n("tags")}</span>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a href="${root}/${lang}/years/index.html">
+        <i class="fas fa-calendar-alt"></i>
+        <span>${i18n("years")}</span>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a href="${root}/index.html">
+        <i class="fas fa-info-circle"></i>
+        <span>${i18n("about")}</span>
+      </a>
+    </li>
+    <li class="nav-item">
+      !{
+        if lang == "en":
+          msg = "En français"
+          lang2 = "fr"
+          icon = f'<img class="icon" src="{static}/home/fr-round.png" alt="french flag"></img>'
+        else:
+          msg = "In english"
+          lang2 = "en"
+          icon = f'<img class="icon" src="{static}/home/uk-round.png" alt="united kingdom flag"></img>'
+
+        if lang2 in langs:
+          url = f'{root}/{lang2}/{parent}/{current}'
+          return f'<a href="{url}">{icon}<span>{msg}</span></a>'
+        else:
+          return f'<div class="unavailable">{icon}<span>{msg}</span></div>'
+      }
+    </li>
+  </ul>
+</nav>
