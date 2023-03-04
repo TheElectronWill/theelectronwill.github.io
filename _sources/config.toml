@@ -3,11 +3,14 @@ title = "TheElectronWill's blog"
 author = "TheElectronWill"
 languages = ["en", "fr"]
 date_format = "%Y-%m-%d"
+max_listed_posts = 8
+max_listed_taxos = 12
 
 [engine]
 input = "."
 output = ".."
 extensions = ["markdown.extensions.codehilite", "markdown.extensions.extra", "mdx_math"]
+symlink_static_resources = true
 
 [i18n.en]
 home = "Home"

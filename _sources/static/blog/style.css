@@ -1,3 +1,5 @@
+@import "code.css";
+
 /* Variables */
 :root {
   /* Full color palette here: http://paletton.com/#uid=63z0u0k++NutuZOLB+V+WuI+5oa */
@@ -26,6 +28,12 @@ body, html {
   height: 100%;
   margin: 0;
   background: var(--background);
+}
+
+/* Blocs de code */
+pre {
+  overflow: scroll;
+  padding: 1em;
 }
 
 /* Liens */
